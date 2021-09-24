@@ -10,6 +10,7 @@ const HAMILTON_PAGE = "views/hamilton.html";
 const HOPPER_PAGE = "views/hopper.html";
 const LOVELACE_PAGE = "views/lovelace.html";
 const TURING_PAGE ="views/turing.html";
+const PORT = 5000;
 
 server.get("/mensaje",(req,res)=>{
     res.send("Mensaje desde js");
@@ -46,7 +47,7 @@ server.get("/turing",(req,res)=>{
 });
 
 
-server.listen(5000,()=>{
+server.listen(PORT,()=>{
     console.log("el servidor inicio ok....!!!");
 });
 
